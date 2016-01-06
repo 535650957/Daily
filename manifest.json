@@ -1,6 +1,6 @@
 ﻿{
     "@platforms": ["android", "iPhone", "iPad"],
-    "id": "",/*应用的标识，创建应用时自动生成，勿手动修改*/
+    "id": "com.gl.Daily",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "Daily",/*应用名称，程序桌面图标名称*/
     "version": {
         "name": "1.0",/*应用版本名称*/
@@ -199,5 +199,80 @@
                 }
             }
         }
-    }
+    },
+	"dependencies":{
+		"pages": {
+			"about.html": {
+				"href": "about.html",
+				"priority": 1
+			},
+			"services.html": {
+				"href": "services.html",
+				"resources": [],
+				"refer": [
+					"about.html"
+				],
+				"priority": 1
+			},
+			"form.html": {
+				"href": "form.html",
+				"priority": 2
+			},
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"css/framework7.ios.colors.min.css",
+					"css/my-app.css",
+					"js/my-app.js",
+					"js/framework7.min.js",
+					"css/framework7.ios.min.css",
+					"img/i-f7-ios.png",
+					"img/i-form-name-ios.svg",
+					"img/i-form-password-ios.svg",
+					"img/i-form-email-ios.svg",
+					"img/i-form-calendar-ios.svg",
+					"img/i-form-tel-ios.svg",
+					"img/i-form-gender-ios.svg",
+					"img/i-form-toggle-ios.svg",
+					"img/i-form-comment-ios.svg",
+					"img/i-form-settings-ios.svg",
+					"img/i-form-url-ios.svg"
+				],
+				"refer": [
+					"about.html",
+					"services.html",
+					"form.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"css/framework7.ios.rtl.min.css",
+				"css/framework7.material.css",
+				"js/framework7.min.js.map",
+				"js/framework7.js.map",
+				"img/i-form-comment-material.svg",
+				"css/framework7.ios.css",
+				"css/framework7.ios.colors.css",
+				"img/i-form-gender-material.svg",
+				"css/framework7.material.colors.min.css",
+				"css/framework7.material.colors.css",
+				"css/framework7.ios.rtl.css",
+				"img/i-form-name-material.svg",
+				"img/i-form-password-material.svg",
+				"img/i-form-settings-material.svg",
+				"img/i-form-tel-material.svg",
+				"css/framework7.material.rtl.css",
+				"js/framework7.js",
+				"img/i-form-email-material.svg",
+				"css/framework7.material.min.css",
+				"img/i-form-calendar-material.svg",
+				"img/i-form-url-material.svg",
+				"img/i-form-toggle-material.svg",
+				"css/framework7.material.rtl.min.css",
+				"img/i-f7-material.png"
+			]
+		}
+	},"fullscreen":true
 }
